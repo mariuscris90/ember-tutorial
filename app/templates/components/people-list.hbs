@@ -1,0 +1,10 @@
+{{title}}
+
+<h2>List of persons</h2>
+
+<ul>
+    {{#each people as |person| }}
+        <li>{{person}}</li>
+        <li {{action "showPerson" person}}>{{person}}</li>
+    {{/each}}
+</ul>
